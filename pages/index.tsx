@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import FeaturedPost from '../components/featuredPost'
+import Header from '../components/header'
+import NavLinks from '../components/nav'
 
 
 const Home: NextPage = () => {
@@ -15,29 +17,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className='flex  justify-between items-center px-10 md:px-16 lg:px-28 z-auto w-[100vw] pt-1' >
-        <div className="logo text-2xl lg:text-4xl text-[#1770F4] font-extrabold">Health Joe</div>
-        <ul className='hidden lg:flex text-white  justify-between space-x-10 text-center font-medium '>
-          <li>
-            <Link href={'/service'} className=''>
-              Service
-            </Link>
-          </li>
-          <li>
-            <Link href={'/contact'}>
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link href={'/about'}>
-              About
-            </Link>
-          </li>
-        </ul>
-
-        <button className="btn px-3 py-[0.20rem] lg:px-5 lg:py-1 bg-[#1770F4] text-white z-20 rounded-md shadow-lg shadow-[#176ff47e]">Sign In</button>
-      </header>
-
+      <Header />
+      <div className="fixed border-[1.5px] border-blue-900 w-[80vw] bottom-3 px-7 py-2 rounded-full">
+      <NavLinks mobile />
+      </div>
       <section className="h-[100vh] relative flex flex-col">
         <div className="w-[15.5rem] lg:w-[25.5rem] overflow-hidden h-[15.5rem] lg:h-[25.5rem] absolute -right-[7%] -top-[12%] bg-gradient-to-tr from-[#176ff494] to-[#ef0ef377] bg-opacity-54 rounded-full filter blur-xl"></div>
         <div className="flex justify-center items-center pt-10 relative flex-col">
@@ -58,6 +41,7 @@ const Home: NextPage = () => {
         />
 
       </section>
+      <section className="h-[100vh]"></section>
       <section className="h-[100vh]"></section>
            
           

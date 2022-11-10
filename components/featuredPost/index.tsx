@@ -13,8 +13,8 @@ interface FPost {
 const FeaturedPost: FC<FPost> = ({title, post, author, authorImg}) => {
 
   return (
-    <div className='absolute lg:left-[18%] -bottom-[100%] lg:-bottom-[28%] lg:mr-10'>
-        <p className="text-2xl dark:text-white underline font-bold">New Post</p>
+    <div className='mt-[14rem] z-10 lg:ml-[18rem] lg:mt-[17rem] lg:mr-10'>
+        <p className="text-2xl dark:text-white underline text-center lg:text-left font-bold">New Post</p>
 
         <div className="flex lg:flex-row flex-col">
           <Image alt='nurse' className='pt-10 rounded-lg w-[300] h-[300]' draggable width={400} height={400} src='https://images.unsplash.com/photo-1542884748-2b87b36c6b90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' />
