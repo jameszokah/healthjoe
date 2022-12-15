@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import FeaturedPost from '../components/featuredPost'
 import Header from '../components/header'
 import NavLinks from '../components/nav'
+import PostList from '../components/postlist'
 
 
 const Home: NextPage = () => {
@@ -12,16 +12,13 @@ const Home: NextPage = () => {
   
   return (
     <div className="bg-white dark:bg-[#070827] w-[100vw]">
-      <Head>
+      {/* <Head>
         <title>Health Joe</title>
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head> */}
 
       <Header />
-      <div className="fixed border-[1.5px] border-blue-900 w-[80vw] bottom-3 px-7 py-2 rounded-full">
-      <NavLinks mobile />
-      </div>
-      <section className="h-[100vh] relative flex flex-col">
+      <section className="relative flex flex-col">
         <div className="w-[15.5rem] lg:w-[25.5rem] overflow-hidden h-[15.5rem] lg:h-[25.5rem] absolute -right-[7%] -top-[12%] bg-gradient-to-tr from-[#176ff494] to-[#ef0ef377] bg-opacity-54 rounded-full filter blur-xl"></div>
         <div className="flex justify-center items-center pt-10 relative flex-col">
           <h1 className='text-center dark:text-white text-5xl lg:text-7xl font-black pt-11'>TIME AND HEALTH</h1>
@@ -41,8 +38,10 @@ const Home: NextPage = () => {
         />
 
       </section>
-      <section className="h-[100vh]"></section>
-      <section className="h-[100vh]"></section>
+      <section className="">
+        {/* <PostList /> */}
+      </section>
+      {/* <section className="h-[100vh]"></section> */}
            
           
     </div>

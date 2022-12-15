@@ -27,7 +27,7 @@ const FeaturedPost: FC<FPost> = ({title, post, author, authorImg}) => {
               <Image src={authorImg} width={50} height={50} alt={author} className="rounded-full w-[45px] h-[45px] lg:w-[50px] lg:h-[50px]" />
               <p className='dark:text-white pl-3'>{author}</p>
               </div>
-              <button className="text-blue-600 rounded-lg border-[1.8px] border-blue-600 px-4 py-1">Read More..</button>
+              <button className="text-blue-600 hover:bg-blue-600/50 rounded-lg border-[1.8px] border-blue-600 px-4 py-1">Read More..</button>
             </div>
           </div>
         </div>
